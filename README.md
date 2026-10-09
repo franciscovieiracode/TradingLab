@@ -1,0 +1,1 @@
+TradeLab is a Java-based trading simulation and backtesting platform designed to explore financial markets, portfolio management, trading strategies, and order execution. The project aims to simulate stock trading, analyze historical market data, and evaluate strategy performance in a realistic environment.
