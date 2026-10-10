@@ -14,7 +14,7 @@ public class StockPosition {
         this.stock = stock;
         this.quantity = quantity;
         this.date = LocalDate.now();
-        this.totalValue = quantity * stock.getAsk();
+        this.totalValue = stock.getAsk().multiply(BigDecimal.valueOf(quantity));
     }
 
 
