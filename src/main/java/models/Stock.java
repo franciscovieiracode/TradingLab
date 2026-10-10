@@ -5,12 +5,14 @@ import java.math.BigDecimal;
 public class Stock {
 
     private String name;
+    private String ticker;
     private BigDecimal bid;
     private BigDecimal ask;
-    private float marketCap;
+    private long marketCap;
 
-    public Stock(String name, BigDecimal bid, BigDecimal ask, float marketCap) {
+    public Stock(String name, String ticker, BigDecimal bid, BigDecimal ask, long marketCap) {
         this.name = name;
+        this.ticker = ticker;
         this.bid = bid;
         this.ask = ask;
         this.marketCap = marketCap;
@@ -40,11 +42,19 @@ public class Stock {
         this.ask = ask;
     }
 
-    public float getMarketCap() {
+    public long getMarketCap() {
         return marketCap;
     }
 
-    public void setMarketCap(float marketCap) {
+    public void setMarketCap(long marketCap) {
         this.marketCap = marketCap;
+    }
+
+    public String getTicker() {
+        return ticker;
+    }
+
+    public void setTicker(String ticker) {
+        this.ticker = ticker;
     }
 }
